@@ -97,7 +97,7 @@ export default function MembranasPage() {
                 </a>
                 <a
                   href="#metodo-polymem"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-sm border border-white/40 px-6 py-3 text-xs font-semibold uppercase tracking-wide text-white/90 backdrop-blur-sm transition-all hover:border-poly-orange hover:text-white sm:w-auto"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-sm border border-poly-navy px-6 py-3 text-xs font-semibold uppercase tracking-wide text-poly-navy backdrop-blur-sm transition-all hover:border-poly-orange hover:text-poly-orange sm:w-auto"
                 >
                   <CheckCircle2 className="h-4 w-4 text-poly-orange" />
                   Trabajos con garantía escrita
