@@ -151,7 +151,7 @@ export default function Home() {
                 <div className="absolute bottom-4 right-4 hidden w-56 flex-col rounded-md border-t-4 border-poly-navy bg-white p-4 shadow-[0_15px_30px_rgba(0,0,0,0.18)] sm:flex">
                   <div className="mb-2 flex items-center justify-between border-b border-gray-100 pb-2">
                     <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-                      Verano 2
+                      Verano
                     </span>
                     <ThermometerSun size={14} className="text-poly-orange" />
                   </div>
@@ -195,14 +195,14 @@ export default function Home() {
             <div className="grid gap-6 md:grid-cols-3">
               <a
                 href={whatsappLink("Hola tengo problemas de condensacion")}
-                className="relative flex min-h-[220px] flex-col justify-end overflow-hidden rounded-sm border border-poly-gray-200 shadow-lg bg-cover bg-center group"
+                className="relative flex min-h-[220px] flex-col justify-end overflow-hidden rounded-md border border-poly-gray-200 shadow-lg bg-cover bg-center group"
                 style={{
                   backgroundImage:
                     "url('/images/home/problem-condensacion.jpeg')",
                 }}
               >
                 <div className="absolute inset-0 bg-black/55 transition-colors group-hover:bg-black/60" />
-                <div className="relative z-10">
+                <div className="relative z-10 px-4 py-4 sm:px-5 sm:py-5">
                   <div className="flex items-center gap-2 text-base font-semibold text-white">
                     <Droplets className="h-5 w-5 text-poly-orange" />
                     Condensación
@@ -214,13 +214,13 @@ export default function Home() {
               </a>
               <a
                 href={whatsappLink("Hola tengo problemas de calor extremo")}
-                className="relative flex min-h-[220px] flex-col justify-end overflow-hidden rounded-sm border border-poly-gray-200 shadow-lg bg-cover bg-center group"
+                className="relative flex min-h-[220px] flex-col justify-end overflow-hidden rounded-md border border-poly-gray-200 shadow-lg bg-cover bg-center group"
                 style={{
                   backgroundImage: "url('/images/home/problem-calor.jpeg')",
                 }}
               >
                 <div className="absolute inset-0 bg-black/55 transition-colors group-hover:bg-black/60" />
-                <div className="relative z-10">
+                <div className="relative z-10 px-4 py-4 sm:px-5 sm:py-5">
                   <div className="flex items-center gap-2 text-base font-semibold text-white">
                     <ShieldCheck className="h-5 w-5 text-poly-orange" />
                     Calor Extremo
@@ -232,14 +232,14 @@ export default function Home() {
               </a>
               <a
                 href={whatsappLink("Hola tengo goteras y filtraciones")}
-                className="relative flex min-h-[220px] flex-col justify-end overflow-hidden rounded-sm border border-poly-gray-200 shadow-lg bg-cover bg-center group"
+                className="relative flex min-h-[220px] flex-col justify-end overflow-hidden rounded-md border border-poly-gray-200 shadow-lg bg-cover bg-center group"
                 style={{
                   backgroundImage:
                     "url('/images/home/problem-filtraciones.jpeg')",
                 }}
               >
                 <div className="absolute inset-0 bg-black/55 transition-colors group-hover:bg-black/60" />
-                <div className="relative z-10">
+                <div className="relative z-10 px-4 py-4 sm:px-5 sm:py-5">
                   <div className="flex items-center gap-2 text-base font-semibold text-white">
                     <CloudRain className="h-5 w-5 text-poly-orange" />
                     Filtraciones
