@@ -1,0 +1,144 @@
+{
+  "categorias": [
+    {
+      "id": "industrial",
+      "label": "INDUSTRIAL"
+    },
+    {
+      "id": "residencial",
+      "label": "RESIDENCIAL"
+    },
+    {
+      "id": "impermeabilizacion",
+      "label": "IMPERMEABILIZACIÓN"
+    }
+  ],
+  "obras": [
+    {
+      "id": "bodega-los-andes-800m2",
+      "categoriaId": "industrial",
+      "titulo": "Recuperación de Techo Oxidado - Bodega Los Andes",
+      "tipoTrabajo": "Poliuretano 1 Pulgada",
+      "ubicacion": "Luján de Cuyo, Mendoza",
+      "superficieM2": 800,
+      "tiempoEjecucion": "3 días",
+      "materialPrincipal": "Poliuretano 40kg/m³",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/industrial/bodega-los-andes.jpeg",
+        "alt": "Techo de chapa de bodega aislado con poliuretano proyectado de 1 pulgada en Luján de Cuyo"
+      }
+    },
+    {
+      "id": "planta-envasado-godoy-cruz",
+      "categoriaId": "industrial",
+      "titulo": "Aislación Galpón Planta de Envasado",
+      "tipoTrabajo": "Poliuretano 1,5 Pulgadas",
+      "ubicacion": "Godoy Cruz, Mendoza",
+      "superficieM2": 1200,
+      "tiempoEjecucion": "4 días",
+      "materialPrincipal": "Poliuretano 40kg/m³ con pintura UV",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/industrial/planta-envasado.jpeg",
+        "alt": "Galpón industrial de planta de envasado con techo blanco aislado con poliuretano en Godoy Cruz"
+      }
+    },
+    {
+      "id": "centro-logistico-palmira",
+      "categoriaId": "industrial",
+      "titulo": "Aislación Térmica Centro Logístico",
+      "tipoTrabajo": "Poliuretano 2 Pulgadas",
+      "ubicacion": "Palmira, Mendoza",
+      "superficieM2": 1500,
+      "tiempoEjecucion": "5 días",
+      "materialPrincipal": "Poliuretano alta densidad",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/industrial/centro-logistico.jpeg",
+        "alt": "Centro logístico con techos de chapa aislados con espuma de poliuretano en Palmira"
+      }
+    },
+    {
+      "id": "casa-campo-lujan",
+      "categoriaId": "residencial",
+      "titulo": "Aislación Térmica Casa de Campo",
+      "tipoTrabajo": "Poliuretano sobre Chapa",
+      "ubicacion": "Luján, Mendoza",
+      "superficieM2": 180,
+      "tiempoEjecucion": "2 días",
+      "materialPrincipal": "Poliuretano 35kg/m³",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/residencial/casa-campo-lujan.jpeg",
+        "alt": "Casa de campo con techo de chapa aislado con poliuretano proyectado en Luján"
+      }
+    },
+    {
+      "id": "duplex-godoy-cruz",
+      "categoriaId": "residencial",
+      "titulo": "Aislación Acústica Dúplex",
+      "tipoTrabajo": "Celulosa Proyectada",
+      "ubicacion": "Godoy Cruz, Mendoza",
+      "superficieM2": 95,
+      "tiempoEjecucion": "1 día",
+      "materialPrincipal": "Celulosa proyectada en entretechos",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/residencial/duplex-godoy-cruz.jpeg",
+        "alt": "Dúplex con aislación acústica mediante celulosa proyectada en Godoy Cruz"
+      }
+    },
+    {
+      "id": "quincho-maipu",
+      "categoriaId": "residencial",
+      "titulo": "Impermeabilización Techo Quincho",
+      "tipoTrabajo": "Membrana Líquida",
+      "ubicacion": "Maipú, Mendoza",
+      "superficieM2": 60,
+      "tiempoEjecucion": "1 día",
+      "materialPrincipal": "Sistema líquido poliuretánico",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/residencial/quincho-maipu.jpeg",
+        "alt": "Quincho residencial con techo impermeabilizado con membrana líquida en Maipú"
+      }
+    },
+    {
+      "id": "losa-comercial-godoy-cruz",
+      "categoriaId": "impermeabilizacion",
+      "titulo": "Impermeabilización Losa Local Comercial",
+      "tipoTrabajo": "Membrana Asfáltica Geotextil",
+      "ubicacion": "Godoy Cruz, Mendoza",
+      "superficieM2": 220,
+      "tiempoEjecucion": "2 días",
+      "materialPrincipal": "Membrana geotextil con pintura reflectiva",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/impermeabilizacion/losa-comercial-godoy-cruz.jpeg",
+        "alt": "Losa de local comercial impermeabilizada con membrana geotextil en Godoy Cruz"
+      }
+    },
+    {
+      "id": "edificio-capital-terraza",
+      "categoriaId": "impermeabilizacion",
+      "titulo": "Recuperación Terraza Edificio",
+      "tipoTrabajo": "Sistema Líquido Poliuretánico",
+      "ubicacion": "Ciudad de Mendoza",
+      "superficieM2": 300,
+      "tiempoEjecucion": "3 días",
+      "materialPrincipal": "Membrana líquida poliuretánica transitable",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/impermeabilizacion/edificio-capital-terraza.jpeg",
+        "alt": "Terraza de edificio impermeabilizada con sistema líquido poliuretánico en Ciudad de Mendoza"
+      }
+    },
+    {
+      "id": "galpon-agro-san-martin",
+      "categoriaId": "impermeabilizacion",
+      "titulo": "Impermeabilización Galpón Agroindustrial",
+      "tipoTrabajo": "Membrana Asfáltica con Aluminio",
+      "ubicacion": "San Martín, Mendoza",
+      "superficieM2": 500,
+      "tiempoEjecucion": "4 días",
+      "materialPrincipal": "Membrana asfáltica aluminizada",
+      "imagenPrincipal": {
+        "src": "/images/portfolio/impermeabilizacion/galpon-agro-san-martin.jpeg",
+        "alt": "Galpón agroindustrial con techo impermeabilizado con membrana aluminizada en San Martín"
+      }
+    }
+  ]
+}

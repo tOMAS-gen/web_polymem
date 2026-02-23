@@ -1,0 +1,14 @@
+services:
+  app:
+    image: node:trixie-slim
+    container_name: polymem-dev
+    working_dir: /app
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_SITE_URL=https://desarrollo.gen.net.ar
+    volumes:
+      - ./:/app
+      - /app/.next
+    command: sh -c "npm run dev"
