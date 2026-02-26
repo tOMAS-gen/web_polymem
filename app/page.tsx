@@ -198,7 +198,7 @@ export default function Home() {
                 className="relative flex min-h-[220px] flex-col justify-end overflow-hidden rounded-md border border-poly-gray-200 shadow-lg bg-cover bg-center group"
                 style={{
                   backgroundImage:
-                    "url('/images/home/problem-condensacion.jpeg')",
+                    "url('/images/servicios/poliuretano/detalle-celulosa.jpeg')",
                 }}
               >
                 <div className="absolute inset-0 bg-black/55 transition-colors group-hover:bg-black/60" />
@@ -438,7 +438,7 @@ export default function Home() {
               className="relative h-64 rounded-xl bg-cover bg-center sm:h-72"
               style={{
                 backgroundImage:
-                  "url('/images/home/equipo-carro-aplicacion.jpeg')",
+                  "url('/images/servicios/venta-materiales/hero-venta-materiales.jpeg')",
               }}
             >
               <div className="absolute inset-0 rounded-xl bg-poly-navy/25" />

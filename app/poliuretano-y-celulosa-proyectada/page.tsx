@@ -304,7 +304,7 @@ export default function PoliuretanoCelulosaPage() {
             className="order-1 relative h-64 rounded-md bg-cover bg-center md:order-2 md:h-auto"
             style={{
               backgroundImage:
-                "url('/images/servicios/poliuretano/bloque-celulosa-interior.jpeg')",
+                "url('/images/servicios/poliuretano/detalle-celulosa.jpeg')",
             }}
           >
             <div className="absolute inset-0 rounded-md bg-poly-navy/25" />
@@ -382,7 +382,7 @@ export default function PoliuretanoCelulosaPage() {
           <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/10">
             <ShieldCheck className="h-9 w-9 text-poly-orange" />
           </div>
-          <h2 className="text-2xl font-bold sm:text-3xl">
+          <h2 className="text-2xl font-bold sm:text-3xl text-white">
             Garantía de Espesor Real
           </h2>
           <p className="max-w-3xl text-sm text-white/80 sm:text-base">
