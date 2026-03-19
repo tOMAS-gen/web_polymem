@@ -66,6 +66,88 @@ export const metadata: Metadata = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "https://www.polymemaislaciones.com.ar/#business",
+  name: "POLY MEM",
+  alternateName: "Poly MEM Aislaciones",
+  url: "https://www.polymemaislaciones.com.ar",
+  logo: "https://www.polymemaislaciones.com.ar/images/brand/isologo_c_fondo.png",
+  image: "https://www.polymemaislaciones.com.ar/images/brand/isologo_c_fondo.png",
+  description:
+    "Empresa especialista en aislación térmica, acústica e impermeabilización en Mendoza y toda la región de Cuyo. Proyección de poliuretano, celulosa y colocación de membranas asfálticas con garantía escrita.",
+  telephone: "+54-9-261-248-4219",
+  email: "contacto@polymemaislaciones.com.ar",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Av. Mathus Hoyos 5798",
+    addressLocality: "Guaymallén",
+    addressRegion: "Mendoza",
+    addressCountry: "AR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -32.8695,
+    longitude: -68.8395,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "18:00",
+    },
+  ],
+  areaServed: [
+    { "@type": "State", name: "Mendoza", sameAs: "https://www.wikidata.org/wiki/Q1429" },
+    { "@type": "State", name: "San Juan", sameAs: "https://www.wikidata.org/wiki/Q1434" },
+    { "@type": "State", name: "San Luis", sameAs: "https://www.wikidata.org/wiki/Q1432" },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Servicios de Aislación e Impermeabilización",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Proyección de Espuma de Poliuretano",
+          url: "https://www.polymemaislaciones.com.ar/poliuretano-y-celulosa-proyectada",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Proyección de Celulosa",
+          url: "https://www.polymemaislaciones.com.ar/poliuretano-y-celulosa-proyectada",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Impermeabilización y Colocación de Membranas",
+          url: "https://www.polymemaislaciones.com.ar/impermeabilizacion-y-membranas",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Venta de Materiales para Aislación",
+          url: "https://www.polymemaislaciones.com.ar/venta-materiales-aislacion",
+        },
+      },
+    ],
+  },
+  sameAs: [
+    "https://www.facebook.com/people/POLY-MEM/61577513511973/",
+    "https://www.instagram.com/polymem.aislaciones/",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,7 +159,13 @@ export default function RootLayout({
   )}`;
 
   return (
-    <html lang="en">
+    <html lang="es-AR">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body
         className={`${montserrat.variable} ${roboto.variable} antialiased`}
       >

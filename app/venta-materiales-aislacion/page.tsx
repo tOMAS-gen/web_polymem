@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     description: pageData.metaDescription,
     images: [
       {
-        url: "/images/brand/isologo_c_fondo.png",
-        width: 731,
-        height: 675,
-        alt: "Poly MEM - Logo",
+        url: "/images/servicios/venta-materiales/hero-venta-materiales.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Venta de materiales para aislación y techado en Mendoza — Poly MEM",
       },
     ],
   },
@@ -44,14 +44,52 @@ export const metadata: Metadata = {
     description: pageData.metaDescription,
     images: [
       {
-        url: "/images/brand/isologo_c_fondo.png",
-        width: 731,
-        height: 675,
-        alt: "Poly MEM - Logo",
-        type: "image/png",
+        url: "/images/servicios/venta-materiales/hero-venta-materiales.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Venta de materiales para aislación y techado en Mendoza — Poly MEM",
       },
     ],
   },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Venta de Materiales para Aislación y Techado",
+  serviceType: "Venta de Materiales de Construcción",
+  description:
+    "Venta mayorista y minorista de insumos profesionales para techos en Mendoza: membranas asfálticas, geotextiles, membrana líquida poliuretánica, pintura asfáltica y revestimientos texturados. Asesoramiento técnico gratuito.",
+  provider: {
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://www.polymemaislaciones.com.ar/#business",
+    name: "POLY MEM",
+  },
+  areaServed: [
+    { "@type": "State", name: "Mendoza" },
+    { "@type": "State", name: "San Juan" },
+    { "@type": "State", name: "San Luis" },
+  ],
+  url: "https://www.polymemaislaciones.com.ar/venta-materiales-aislacion",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Inicio",
+      item: "https://www.polymemaislaciones.com.ar/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Venta de Materiales de Aislación",
+      item: "https://www.polymemaislaciones.com.ar/venta-materiales-aislacion",
+    },
+  ],
 };
 
 export default function VentaMaterialesPage() {
@@ -61,6 +99,14 @@ export default function VentaMaterialesPage() {
 
   return (
     <main className="bg-white text-poly-gray-500">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="relative overflow-hidden bg-black">
         <div
           className="absolute inset-0 bg-cover bg-center"

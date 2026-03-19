@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     description: pageData.metaDescription,
     images: [
       {
-        url: "/images/brand/isologo_c_fondo.png",
-        width: 731,
-        height: 675,
-        alt: "Poly MEM - Logo",
+        url: "/images/servicios/poliuretano/hero-poliuretano-celulosa.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Proyección de espuma de poliuretano en techo de chapa — Poly MEM Mendoza",
       },
     ],
   },
@@ -40,14 +40,52 @@ export const metadata: Metadata = {
     description: pageData.metaDescription,
     images: [
       {
-        url: "/images/brand/isologo_c_fondo.png",
-        width: 731,
-        height: 675,
-        alt: "Poly MEM - Logo",
-        type: "image/png",
+        url: "/images/servicios/poliuretano/hero-poliuretano-celulosa.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Proyección de espuma de poliuretano en techo de chapa — Poly MEM Mendoza",
       },
     ],
   },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Proyección de Poliuretano y Celulosa — Aislación Térmica y Acústica",
+  serviceType: "Aislación Térmica y Acústica",
+  description:
+    "Servicio de proyección in-situ de espuma de poliuretano rígido y celulosa acústica para techos de chapa, losas y naves industriales en Mendoza y Cuyo. Elimina condensación, calor extremo y ruidos.",
+  provider: {
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://www.polymemaislaciones.com.ar/#business",
+    name: "POLY MEM",
+  },
+  areaServed: [
+    { "@type": "State", name: "Mendoza" },
+    { "@type": "State", name: "San Juan" },
+    { "@type": "State", name: "San Luis" },
+  ],
+  url: "https://www.polymemaislaciones.com.ar/poliuretano-y-celulosa-proyectada",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Inicio",
+      item: "https://www.polymemaislaciones.com.ar/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Proyección de Poliuretano y Celulosa",
+      item: "https://www.polymemaislaciones.com.ar/poliuretano-y-celulosa-proyectada",
+    },
+  ],
 };
 
 export default function PoliuretanoCelulosaPage() {
@@ -57,6 +95,14 @@ export default function PoliuretanoCelulosaPage() {
 
   return (
     <main className="bg-white text-poly-gray-500">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="relative overflow-hidden bg-white">
         <div
           className="absolute inset-0 bg-cover bg-center"

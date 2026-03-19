@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     description: pageData.metaDescription,
     images: [
       {
-        url: "/images/brand/isologo_c_fondo.png",
-        width: 731,
-        height: 675,
-        alt: "Poly MEM - Logo",
+        url: "/images/servicios/membranas/hero-impermeabilizacion.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Impermeabilización de techo con membrana asfáltica — Poly MEM Mendoza",
       },
     ],
   },
@@ -43,14 +43,52 @@ export const metadata: Metadata = {
     description: pageData.metaDescription,
     images: [
       {
-        url: "/images/brand/isologo_c_fondo.png",
-        width: 731,
-        height: 675,
-        alt: "Poly MEM - Logo",
-        type: "image/png",
+        url: "/images/servicios/membranas/hero-impermeabilizacion.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Impermeabilización de techo con membrana asfáltica — Poly MEM Mendoza",
       },
     ],
   },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Impermeabilización de Techos y Colocación de Membranas",
+  serviceType: "Impermeabilización y Techado",
+  description:
+    "Servicio profesional de impermeabilización con membranas asfálticas (aluminizadas y geotextil) y membranas líquidas poliuretánicas para techos de losa y chapa en Mendoza y Cuyo. Solución definitiva a goteras y humedad.",
+  provider: {
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://www.polymemaislaciones.com.ar/#business",
+    name: "POLY MEM",
+  },
+  areaServed: [
+    { "@type": "State", name: "Mendoza" },
+    { "@type": "State", name: "San Juan" },
+    { "@type": "State", name: "San Luis" },
+  ],
+  url: "https://www.polymemaislaciones.com.ar/impermeabilizacion-y-membranas",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Inicio",
+      item: "https://www.polymemaislaciones.com.ar/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Impermeabilización y Membranas",
+      item: "https://www.polymemaislaciones.com.ar/impermeabilizacion-y-membranas",
+    },
+  ],
 };
 
 export default function MembranasPage() {
@@ -60,6 +98,14 @@ export default function MembranasPage() {
 
   return (
     <main className="bg-white text-poly-gray-500">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="relative overflow-hidden bg-white">
         <div
           className="absolute inset-0 bg-cover bg-center"
