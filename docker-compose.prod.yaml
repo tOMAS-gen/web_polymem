@@ -1,9 +1,6 @@
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: polymem:latest
+    image: ghcr.io/tomas-gen/web_polymem:latest
     container_name: polymem
     restart: unless-stopped
     ports:
