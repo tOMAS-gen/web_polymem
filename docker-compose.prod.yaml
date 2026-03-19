@@ -1,6 +1,7 @@
 services:
   app:
     image: ghcr.io/tomas-gen/web_polymem:latest
+    pull_policy: always
     container_name: polymem
     restart: unless-stopped
     ports:
