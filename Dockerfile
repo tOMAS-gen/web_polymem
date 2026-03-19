@@ -1,43 +1,50 @@
-# ── Stage 1: deps ─────────────────────────────────────────────────────────────
+# =============================================================================
+# POLY MEM - Dockerfile Multi-stage para producción
+#
+# Las variables NEXT_PUBLIC_* se embeben con placeholders durante el build.
+# Al arrancar el contenedor, entrypoint.sh los reemplaza con los valores
+# reales del environment de Docker/docker-compose.
+# =============================================================================
+
+# --- Etapa 1: Dependencias ---
 FROM node:22-alpine AS deps
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN npm ci --ignore-scripts
 
-# ── Stage 2: builder ──────────────────────────────────────────────────────────
+# --- Etapa 2: Build ---
 FROM node:22-alpine AS builder
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-ENV NEXT_TELEMETRY_DISABLED=1
-ENV NODE_ENV=production
-ENV NEXT_PUBLIC_SITE_URL=https://www.polymemaislaciones.com.ar
-
 RUN npm run build
 
-# ── Stage 3: runner ───────────────────────────────────────────────────────────
+# --- Etapa 3: Producción ---
 FROM node:22-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV NEXT_TELEMETRY_DISABLED=1
-ENV NEXT_PUBLIC_SITE_URL=https://www.polymemaislaciones.com.ar
+ENV HOSTNAME="0.0.0.0"
+ENV PORT=3000
 
-# Usuario no-root
-RUN addgroup --system --gid 1001 nodejs \
- && adduser  --system --uid 1001 nextjs
+# Crear usuario no-root por seguridad
+RUN addgroup --system --gid 1001 nodejs && \
+    adduser --system --uid 1001 nextjs
 
-COPY --from=builder /app/public ./public
+# Copiar solo lo necesario del build standalone
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+# Copiar el entrypoint que reemplaza placeholders en runtime
+COPY --chown=nextjs:nodejs scripts/entrypoint.sh ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
 USER nextjs
 
 EXPOSE 3000
-ENV PORT=3000
-ENV HOSTNAME="0.0.0.0"
 
-CMD ["node", "server.js"]
+ENTRYPOINT ["./entrypoint.sh"]
