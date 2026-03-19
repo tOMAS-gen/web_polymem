@@ -2,8 +2,8 @@ export const siteData = {
   topBar: {
     location: "Servicio en Mendoza y todo Cuyo",
     phoneLabel: "Urgencias y Ventas",
-    phoneNumber: "+54 9 261 [Tu Número]",
-    hours: "Lun-Vie 8:00 - 18:00hs",
+    phoneNumber: "+54 9 2612 48-4219",
+    hours: "Lun-Vie 8:00 - 17:00hs",
   },
   footer: {
     brand: "POLY MEM",
@@ -12,11 +12,11 @@ export const siteData = {
     social: [
       {
         label: "Facebook",
-        url: "https://facebook.com/",
+        url: "https://www.facebook.com/people/POLY-MEM/61577513511973/",
       },
       {
         label: "Instagram",
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/polymem.aislaciones/",
       },
     ],
     servicesTitle: "NUESTROS SERVICIOS",
@@ -43,14 +43,19 @@ export const siteData = {
       },
     ],
     contactTitle: "CONTACTO",
-    address: "Base Operativa: Mendoza (Cobertura en San Juan y San Luis).",
-    phoneLabel: "Teléfono",
-    phoneNumber: "+54 9 261 [Tu Número]",
-    whatsappLabel: "WhatsApp",
-    whatsappNumber: "+54 9 261 [Tu Número]",
-    email: "contacto@polymem.com.ar",
-    hours: "Lun a Vie: 8:00 - 18:00hs.",
-    legalNote: "© 2024 POLY MEM - Todos los derechos reservados.",
+    address: "Av. Mathus Hoyos 5798, Guaymallén, Mendoza",
+    mapsUrl: "https://maps.app.goo.gl/T7SC3sFu2hTgboFv5",
+    phoneLabel: "Pablo",
+    phoneNumber: "+54 9 2612 48-4219",
+    phone2Label: "Cristian",
+    phone2Number: "+54 9 2613 63-3686",
+    whatsappLabel: "WhatsApp Pablo",
+    whatsappNumber: "+54 9 2612 48-4219",
+    whatsapp2Label: "WhatsApp Cristian",
+    whatsapp2Number: "+54 9 2613 63-3686",
+    email: "contacto@polymemaislaciones.com.ar",
+    hours: "Lun a Vie: 8:00 - 17:00hs.",
+    legalNote: "2025 POLY MEM - Todos los derechos reservados.",
     fiscalLabel: "QR Data Fiscal",
   },
   header: {
@@ -92,7 +97,7 @@ export const siteData = {
   ],
   pages: {
     home: {
-      url: "https://www.polymem.com.ar/",
+      url: "https://www.polymemaislaciones.com.ar/",
       targetKeyword: "Aislación e Impermeabilización Mendoza",
       title:
         "Poly MEM | Aislación de Poliuretano, Membranas y Materiales en Mendoza",
@@ -100,7 +105,7 @@ export const siteData = {
         "Soluciones definitivas para techos de chapa y losa. Proyección de espuma de poliuretano, celulosa e impermeabilización con garantía técnica en Cuyo.",
     },
     poliuretanoCelulosa: {
-      url: "https://www.polymem.com.ar/poliuretano-y-celulosa-proyectada",
+      url: "https://www.polymemaislaciones.com.ar/poliuretano-y-celulosa-proyectada",
       targetKeyword:
         "Espuma de poliuretano, aislación térmica techos, celulosa proyectada",
       title:
@@ -109,7 +114,7 @@ export const siteData = {
         "Servicio de proyección in-situ de espuma de poliuretano y celulosa. Solución definitiva a la condensación y temperaturas extremas en techos de Mendoza.",
     },
     membranas: {
-      url: "https://www.polymem.com.ar/impermeabilizacion-y-membranas",
+      url: "https://www.polymemaislaciones.com.ar/impermeabilizacion-y-membranas",
       targetKeyword:
         "Arreglo de techos, membrana asfáltica, goteras, techos de losa",
       title:
@@ -118,7 +123,7 @@ export const siteData = {
         "Servicio profesional de impermeabilización. Solución definitiva a goteras y humedad en techos de losa y chapa. Membranas asfálticas y líquidas con garantía en Cuyo.",
     },
     ventaMateriales: {
-      url: "https://www.polymem.com.ar/venta-materiales-aislacion",
+      url: "https://www.polymemaislaciones.com.ar/venta-materiales-aislacion",
       targetKeyword:
         "Comprar membrana, pintura para techos, insumos aislación",
       title:
@@ -127,14 +132,14 @@ export const siteData = {
         "Venta de insumos profesionales para techos. Membranas, pinturas asfálticas, geotextiles y aislantes. Comprá con asesoramiento técnico en Mendoza.",
     },
     contactoPresupuesto: {
-      url: "https://www.polymem.com.ar/contacto-presupuesto",
+      url: "https://www.polymemaislaciones.com.ar/contacto-presupuesto",
       targetKeyword: "Presupuesto aislación, contacto POLY MEM",
       title: "Contacto y Presupuesto Sin Cargo | Poly MEM Mendoza",
       metaDescription:
         "Solicitá tu presupuesto de aislación o impermeabilización. Atención en Mendoza, San Juan y San Luis. Asesoramiento técnico y venta de materiales.",
     },
     trabajosRealizados: {
-      url: "https://www.polymem.com.ar/trabajos-realizados",
+      url: "https://www.polymemaislaciones.com.ar/trabajos-realizados",
       targetKeyword:
         "Obras Poly MEM, fotos aislación poliuretano, antes y después techos Mendoza",
       title: "Obras Realizadas y Casos Técnicos | Poly MEM Cuyo",
