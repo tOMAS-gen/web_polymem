@@ -1,0 +1,24 @@
+{
+  "name": "POLY MEM — Aislaciones Mendoza",
+  "short_name": "POLY MEM",
+  "description": "Aislación térmica, acústica e impermeabilización en Mendoza y Cuyo. Poliuretano proyectado, celulosa y membranas con garantía escrita.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF5A1F",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
